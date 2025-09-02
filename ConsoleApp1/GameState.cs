@@ -27,8 +27,8 @@ namespace SceneSys
 
         }
 
-
         private Dictionary<Enum, IScene> scenes;
+
 
 
         //Constructeur
@@ -46,11 +46,19 @@ namespace SceneSys
 
         public void ChangeScene(Enum enumId)
         {
+
+
+            if (currentScene != null) {
+
+                currentScene.Hide(); 
+
+            }
             if (scenes.ContainsKey(enumId))
             {
                 scenes[enumId].Show();
                 currentScene = scenes[enumId];
                 //currentScene.Show();
+                 
                 Debug.WriteLine($"current scene {enumId}");
                 Debug.WriteLine($"Changement de Scene: {enumId} ");
             }
@@ -69,6 +77,16 @@ namespace SceneSys
         public void DrawScene()
         {
             currentScene?.Draw();
+        }
+
+        public void RemoveScene()
+        {
+
+            foreach (KeyValuePair<Enum, IScene> scene in scenes) {
+
+                scene.Value.Close();
+            }
+
         }
     }
 }

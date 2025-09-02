@@ -1,7 +1,7 @@
 ﻿using Raylib_cs;
-using System;
+//using System;
 using static Raylib_cs.Raylib;
-using static SceneSys.EnumType;
+//using static SceneSys.EnumType;
 
 namespace SceneSys
 {
@@ -16,7 +16,26 @@ namespace SceneSys
 
         }
 
+        public void Show()
+        {
 
+            Console.WriteLine($"Show scene{EnumType.Scene.Option}");
+        }
+
+
+        public void Hide()
+        {
+
+            Console.WriteLine($"Hide scene{EnumType.Scene.Option}");
+        }
+
+
+        public void Close()
+        {
+
+            Console.WriteLine($"Close scene{EnumType.Scene.Option}");
+
+        }
         public void Update()
         {
             if (IsKeyPressed(KeyboardKey.Escape))

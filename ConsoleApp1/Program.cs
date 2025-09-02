@@ -18,13 +18,14 @@ class Program()
         while (!WindowShouldClose()) {
             Init.Instance.Update();
             BeginDrawing();
-            Init.Instance.Initializing();
+            //Init.Instance.Initializing();
             ClearBackground(Color.Black);
             Init.Instance.Draw();
             EndDrawing();
 
         }
 
+        Init.Instance.RemoveScene();
         CloseWindow();
         return 0;
     }

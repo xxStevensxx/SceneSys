@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SceneSys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c86a7560deef44769fdfd8b68367be3bd66a309")]
 [assembly: System.Reflection.AssemblyProductAttribute("SceneSys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SceneSys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

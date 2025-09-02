@@ -39,6 +39,7 @@ namespace SceneSys
             sceneGamePlay = new SceneGamePlay();
             sceneOption = new SceneOption();
          
+            //Singleton
             gameState = GameState.Instance;
 
             gameState.RegisterScene(EnumType.Scene.Menu, sceneMenu);
@@ -52,22 +53,22 @@ namespace SceneSys
 
         public void OnInit(){}
 
-
-        public void Initializing()
-        {
-
-        }
-
         public void Update()
         {
             gameState.UpdateScene();
         }
-
 
         public void Draw()
         {
             gameState.DrawScene();
           
         }
+
+        public void RemoveScene()
+        {
+            gameState.RemoveScene();
+
+        }
+
     }
 }

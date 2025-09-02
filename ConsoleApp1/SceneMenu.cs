@@ -6,7 +6,20 @@ namespace SceneSys
 {
     class SceneMenu : IScene
     {
+
+        //button DIP
+        IGui<Button> playButton;
+        IGui<Button> optionButton;
+        IGui<Button> quitButton;
+
         public string Name { get; set; }
+
+        public SceneMenu()
+        {
+            playButton = new Button();
+            optionButton = new Button();
+            quitButton = new Button();
+        }
 
         public void Draw() {
 
@@ -14,11 +27,29 @@ namespace SceneSys
 
         }
 
+        public void Show()
+        {
+            Console.WriteLine($"Show scene{EnumType.Scene.Menu}");
+        }
+
+
+        public void Hide() {
+
+            Console.WriteLine($"Hide scene{EnumType.Scene.Menu}");
+        }
+
+
+        public void Close() {
+
+            Console.WriteLine($"Close scene{EnumType.Scene.Menu}");
+
+        }
+
 
         public void Update()
         {
 
-            if (IsKeyPressed(KeyboardKey.Space)) {
+            if (IsKeyPressed(KeyboardKey.G)) {
 
                 GameState.Instance.ChangeScene(EnumType.Scene.GamePlay);
 

@@ -14,6 +14,26 @@ namespace SceneSys
             DrawText("Bonjour je suis le GamePlay", 50, GetScreenHeight() / 2, 35, Color.RayWhite);
         }
 
+        public void Show()
+        {
+
+            Console.WriteLine($"Show scene{EnumType.Scene.GamePlay}");
+        }
+
+
+        public void Hide()
+        {
+
+            Console.WriteLine($"Hide scene{EnumType.Scene.GamePlay}");
+        }
+
+
+        public void Close()
+        {
+
+            Console.WriteLine($"Close scene{EnumType.Scene.GamePlay}");
+
+        }
         public void Update() {
 
             if (IsKeyPressed(KeyboardKey.M)) {

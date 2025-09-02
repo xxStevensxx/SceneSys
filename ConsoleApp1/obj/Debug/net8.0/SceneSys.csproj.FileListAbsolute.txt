@@ -20,3 +20,4 @@ C:\Users\Stevens\OneDrive\Bureau\Gaming_Campus\Projet_2\sceneSys\ConsoleApp1\Con
 C:\Users\Stevens\OneDrive\Bureau\Gaming_Campus\Projet_2\sceneSys\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\SceneSys.pdb
 C:\Users\Stevens\OneDrive\Bureau\Gaming_Campus\Projet_2\sceneSys\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\SceneSys.genruntimeconfig.cache
 C:\Users\Stevens\OneDrive\Bureau\Gaming_Campus\Projet_2\sceneSys\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\SceneSys.dll
+C:\Users\Stevens\OneDrive\Bureau\Gaming_Campus\Projet_2\sceneSys\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\SceneSys.sourcelink.json
