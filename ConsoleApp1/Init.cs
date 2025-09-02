@@ -12,6 +12,7 @@ namespace SceneSys
         IScene sceneMenu;
         IScene sceneOption;
         IScene currentScene;
+        IGrid grid;
         GameState gameState;
 
         //singleton
@@ -38,6 +39,7 @@ namespace SceneSys
             sceneMenu = new SceneMenu();
             sceneGamePlay = new SceneGamePlay();
             sceneOption = new SceneOption();
+            grid = new Grid(5, 3, 75, 75);
          
             //Singleton
             gameState = GameState.Instance;
@@ -61,6 +63,7 @@ namespace SceneSys
         public void Draw()
         {
             gameState.DrawScene();
+            grid.Draw();
           
         }
 

@@ -11,5 +11,14 @@ namespace SceneSys
             GamePlay,
             Option,
         }
+
+
+        public enum GridValue
+        {
+            Empty,
+            Snake,
+            Food,
+            Outside
+        }
     }
 }
