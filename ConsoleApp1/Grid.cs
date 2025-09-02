@@ -24,7 +24,7 @@ namespace SceneSys
 
         public void Draw()
         {
-            int spaceBetween = 10;
+            int spaceBetween = 5;
 
             for (int r = 0; r < row; r++) {
 
